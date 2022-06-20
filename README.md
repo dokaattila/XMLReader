@@ -19,8 +19,8 @@ XMLReader is a very simple RSS feed reader.
 
 ## Usage
 
-- URL/getrss
-  it takes a GET-request and returns a JSON object with title, description, etc...
+- URL/getrss?url={URL}
+- it takes a GET-request and returns a JSON object with title, description, etc...
 - Example:
 ```json
 [
