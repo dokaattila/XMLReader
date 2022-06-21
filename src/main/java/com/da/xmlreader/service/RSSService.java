@@ -19,6 +19,9 @@ public class RSSService {
 
     public List<RSS> getRss(String url) {
         List<RSS> rssList = new ArrayList<>();
+        if (url.contains("http:")) {
+            url = url.replaceAll("http", "https");
+        }
         try {
             URL feedUrl = new URL(url);
             SyndFeedInput input = new SyndFeedInput();
